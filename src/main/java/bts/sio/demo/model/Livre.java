@@ -24,7 +24,7 @@ public class Livre {
     @Column(name = "prix")
     private Integer prix;
 
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "auteur", nullable = false)
     private Auteur auteur;
 

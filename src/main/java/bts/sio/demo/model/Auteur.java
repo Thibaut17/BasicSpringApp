@@ -1,7 +1,12 @@
 package bts.sio.demo.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -16,6 +21,5 @@ public class Auteur {
 
     @Column(name = "nom", nullable = false)
     private String nom;
-
 
 }
